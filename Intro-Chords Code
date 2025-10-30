@@ -1,0 +1,12 @@
+# Intro melody with fade-in and fade-out
+# faded in 
+with gain(value=[0, 1], beats=1, start=0):
+    playNote(70, beats=0.5, velocity=96, sustain=0.10)
+    playNote(72, beats=0.5, velocity=96, sustain=0.10)
+playNote(74, beats=1.0, velocity=98, sustain=0.20)
+rest(0.5)
+playNote(72, beats=0.5, velocity=94, sustain=0.10)
+playNote(70, beats=1.0, velocity=92, sustain=0.20)
+# faded out
+with gain(value=[1, 0], beats=2, start=0):
+    playNote(70, beats=2, velocity=90, sustain=0.30)

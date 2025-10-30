@@ -1,0 +1,60 @@
+# Bass Track section (from beats 24 to 92)
+# This bass track adds depth and rhythmic support to the chorus
+# Root-note bass with fade-in & fade-out to create a smooth dynamic flow that feels natural
+# faded in during the first 4 beats
+moveTo(8)
+with gain(value=[0.4, 0.7, 1.0], beats=4, start=0):
+    playNote(58, beats=2, velocity=78, sustain=0.30)  
+    playNote(58, beats=2, velocity=78, sustain=0.30)
+# no faded in in the following 4 beats
+playNote(58, beats=2, velocity=80, sustain=0.30)
+playNote(58, beats=2, velocity=80, sustain=0.30)
+
+# Gm7 (8 beats)
+playNote(55, beats=2, velocity=82, sustain=0.35)       
+playNote(55, beats=2, velocity=82, sustain=0.35)
+playNote(55, beats=2, velocity=82, sustain=0.35)
+playNote(55, beats=2, velocity=82, sustain=0.35)
+
+# Eb (8 beats)
+playNote(51, beats=2, velocity=80, sustain=0.35)   
+playNote(51, beats=2, velocity=80, sustain=0.35)
+playNote(51, beats=2, velocity=80, sustain=0.35)
+playNote(51, beats=2, velocity=80, sustain=0.35)
+
+#Bb (8 beats)
+playNote(58, beats=2, velocity=82, sustain=0.35)
+playNote(58, beats=2, velocity=82, sustain=0.35)
+playNote(58, beats=2, velocity=82, sustain=0.35)
+playNote(58, beats=2, velocity=82, sustain=0.35)
+
+# F (8 beats) 
+playNote(53, beats=2, velocity=80, sustain=0.35)     
+playNote(53, beats=2, velocity=80, sustain=0.35)
+playNote(53, beats=2, velocity=80, sustain=0.35)
+playNote(53, beats=2, velocity=80, sustain=0.35)
+
+# Gm7 (8 beats) 
+playNote(55, beats=2, velocity=80, sustain=0.35)
+playNote(55, beats=2, velocity=80, sustain=0.35)
+playNote(55, beats=2, velocity=80, sustain=0.35)
+playNote(55, beats=2, velocity=80, sustain=0.35)
+
+#Eb (8 beats)
+playNote(51, beats=2, velocity=78, sustain=0.35)
+playNote(51, beats=2, velocity=78, sustain=0.35)
+playNote(51, beats=2, velocity=78, sustain=0.35)
+playNote(51, beats=2, velocity=78, sustain=0.35)
+
+#  Bb +  F
+playNote(58, beats=2, velocity=78, sustain=0.35)       
+playNote(58, beats=1, velocity=78, sustain=0.25)      
+# faded out from 83 beats to the end
+with gain(value=[1.0, 0.6, 0.3, 0.0], beats=8, start=0):
+    #beats 83-88, Bb
+    playNote(58, beats=2, velocity=76, sustain=0.30)   
+    playNote(58, beats=2, velocity=74, sustain=0.30)   
+    playNote(58, beats=1, velocity=72, sustain=0.20)   
+    #beats 88 to the end, F
+    playNote(53, beats=2, velocity=70, sustain=0.25)   
+    playNote(53, beats=1, velocity=65, sustain=0.15)
